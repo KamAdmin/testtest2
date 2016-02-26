@@ -19,8 +19,6 @@
     if (self) {
         
         
-        // Main profile background, Photo and Costume
-        
         self.background = [[UIImageView alloc] initWithFrame:CGRectMake((self.frame.size.width - 600)/2, 50, 600, 500)];
         [self.background setImage:[UIImage imageNamed:@"Rectangle 821"]];
         [self.background setContentMode:UIViewContentModeScaleAspectFit];
@@ -36,9 +34,6 @@
         [self addSubview:self.character];
         
         
-        
-        // Central image from kid and magnifying glass button
-        
         self.imageToLoad = [[UIImageView alloc] initWithFrame:CGRectMake((self.background.frame.size.width - 270) /2, 10, 270, 260)];
         [self.imageToLoad setContentMode:UIViewContentModeScaleAspectFit];
         [self.imageToLoad setUserInteractionEnabled:YES];
@@ -52,8 +47,6 @@
         [self.imageToLoad addSubview:self.magGlassBtn];
         
         
-        
-        // Send, play and track buttons
         
         self.sendMsgBtn = [[UIButton alloc] initWithFrame:CGRectMake((self.background.frame.size.width - 260) /2, self.imageToLoad.frame.size.height, 260, 60)];
         [self.sendMsgBtn setImage:[UIImage imageNamed:@"Send Message"] forState:UIControlStateNormal];
